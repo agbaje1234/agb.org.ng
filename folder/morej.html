@@ -1,0 +1,77 @@
+<title>agb.com</title>
+<link rel="stylesheet" text="css/text" href="css/style.css">
+<script src="js/js.js" type="text/javascript"></script>
+
+	<a href="javascript.html" onclick="Back();" value="Back" ><button>Back</button></a>
+	
+	<div id="home">
+		<a href="index.html" value="Home" ><button>Home</button></a>
+	</div>
+	<h1>Javascript</h1>
+<div id="box3"></br>
+	<p id="p">
+	THE ENVIRONMRNT</br>
+The collection of variables and their values that exist at a given time is
+called the environment. When a program starts up, this environment is
+not empty. It always contains variables that are part of the language
+standard, and most of the time, it has variables that provide ways to
+interact with the surrounding system. For example, in a browser, there
+are variables and functions to inspect and influence the currently loaded
+website and to read mouse and keyboard input.</br></br>
+FUNCTIONS</br>
+A lot of the values provided in the default environment have the type
+function. A function is a piece of program wrapped in a value. Such
+values can be applied in order to run the wrapped program. For example,
+in a browser environment, the variable alert holds a function that shows
+a little dialog box with a message. It is used like this:</br></br>
+alert (" Good m o r n i n g !") ;</br></br>
+Executing a function is called invoking, calling, or applying it. You can
+call a function by putting parentheses after an expression that produces
+a function value. Usually you’ll directly use the name of the variable
+that holds the function. The values between the parentheses are given
+to the program inside the function. In the example, the alert function
+uses the string that we give it as the text to show in the dialog box.
+Values given to functions are called arguments. The alert function needs
+only one of them, but other functions might need a different number or
+different types of arguments.</br></br>
+
+THE CONSOLE.LOG FUNCTION</br>
+The alert function can be useful as an output device when experimenting,
+but clicking away all those little windows will get on your nerves. In past
+examples, we’ve used console.log to output values. Most JavaScript systems
+(including all modern web browsers and Node.js) provide a console
+.log function that writes out its arguments to some text output device.
+In browsers, the output lands in the JavaScript console. This part of
+the browser interface is hidden by default, but most browsers open it
+when you press F12 or, on Mac, when you press Command-Option-I. If
+that does not work, search through the menus for an item named “web
+console” or “developer tools”.</br>
+var x = 30;</br>
+c o n s o l e . log (" the value of x is " , x ) ;</br>
+// ! the value of x is 30</br>
+Though variable names cannot contain period characters, console.log
+clearly has one. This is because console.log isn’t a simple variable. It
+is actually an expression that retrieves the log property from the value
+held by the console variable. We will find out exactly what this means
+in Chapter 4.</br></br>
+RETURN VALUES</br>
+Showing a dialog box or writing text to the screen is a side effect. A lot of
+functions are useful because of the side effects they produce. Functions
+may also produce values, and in that case, they don’t need to have a side
+effect to be useful. For example, the function Math.max takes any number
+of number values and gives back the greatest.</br>
+c o n s o l e . log ( Math . max (2 , 4) ) ;</br>
+// ! 4</br></br>
+When a function produces a value, it is said to return that value. Anything
+that produces a value is an expression in JavaScript, which means
+function calls can be used within larger expressions. Here a call to Math
+.min, which is the opposite of Math.max, is used as an input to the plus operator:</br>
+c o n s o l e . log ( Math . min (2 , 4) + 100) ;</br>
+// ! 102</br></br>
+The next chapter explains how to write your own functions. </br></br>
+
+		</br>
+		Read more in this text-book 
+		<a href="file/javascript.pdf"><button>Read More</button></a>
+	</p>
+</div>
